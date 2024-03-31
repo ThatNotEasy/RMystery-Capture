@@ -1,0 +1,38 @@
+{
+  "name": "Mystery Capture 2.0",
+  "version": "3.3",
+  "manifest_version": 2,
+  "background": {
+    "persistent": true,
+    "scripts": ["background.js"]
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://*/*"],
+      "js": ["content-script.js"],
+      "all_frames": false,
+      "run_at": "document_start"
+    }
+  ],
+  "browser_action": {
+    "default_icon": "icons/icon.png"
+  },
+  "permissions": [
+    "tabs",
+    "storage",
+    "webRequest",
+    "webRequestBlocking",
+    "http://*/*",
+    "https://*/*",
+    "*://*/*",
+    "contentSettings",
+    "cookies",
+    "unlimitedStorage",
+    "webNavigation",
+    "contextMenus",
+    "clipboardWrite",
+    "activeTab",
+    "runtime"
+  ],
+  "web_accessible_resources": ["mod.js"]
+}
