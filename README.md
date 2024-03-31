@@ -12,10 +12,9 @@ RMystery Capture is a browser extension designed to capture and analyze network 
 ## Installation
 
 1. Clone the repository:
+```
 git clone https://github.com/ThatNotEasy/RMystery-Capture.git
-
-markdown
-Copy code
+```
 
 2. Navigate to the `RMystery-Capture` directory.
 
