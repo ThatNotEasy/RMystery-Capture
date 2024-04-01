@@ -1,38 +1,23 @@
 {
-  "name": "Mystery Capture 2.0",
-  "version": "3.3",
-  "manifest_version": 2,
   "background": {
     "persistent": true,
     "scripts": ["background.js"]
   },
-  "content_scripts": [
-    {
-      "matches": ["*://*/*"],
-      "js": ["content-script.js"],
-      "all_frames": false,
-      "run_at": "document_start"
-    }
-  ],
-  "browser_action": {
-    "default_icon": "icons/icon.png"
-  },
+  "manifest_version": 2,
+  "name": "RMystery Capture 2.0",
+  "browser_action": { "default_icon": "icons/icon.png" },
   "permissions": [
-    "tabs",
-    "storage",
+    "activeTab",
     "webRequest",
     "webRequestBlocking",
-    "http://*/*",
-    "https://*/*",
     "*://*/*",
-    "contentSettings",
-    "cookies",
-    "unlimitedStorage",
-    "webNavigation",
-    "contextMenus",
+    "tabs",
     "clipboardWrite",
-    "activeTab",
-    "runtime"
+    "storage"
   ],
-  "web_accessible_resources": ["mod.js"]
+  "version": "1.0",
+  "icons": {
+    "48": "icons/icon.png",
+    "96": "icons/icon.png"
+  }
 }
