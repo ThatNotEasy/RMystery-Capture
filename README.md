@@ -42,5 +42,5 @@ git clone https://github.com/ThatNotEasy/RMystery-Capture.git
 
 Contributions are welcome! Feel free to submit bug reports, feature requests, or pull requests to help improve RMystery Capture.
 
-## Author:
+## References:
 - xMysterious
