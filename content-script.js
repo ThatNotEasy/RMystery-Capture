@@ -25,5 +25,5 @@
     }
 
     // Load mod.js and logger.js scripts
-    appendScript("/mod.js");
+    appendScript("/eme-logger-mod.js");
 })();
